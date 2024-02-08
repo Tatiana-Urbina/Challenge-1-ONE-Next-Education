@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/Logo-1.png" alt="logo alura">
+        </nav>
+    </header>
+    <div class="contenedor">
+        <section class="encriptar">
+            <div class="cont-texto-usuario">
+                <!--<p id="msgError"></p>-->
+                <input type="text" id="texto_usuario">
+            </div>
+            <div class="cont-inferior">
+                <div class="cont-txt-inf">
+                    <img src="img/bi_exclamation-circle-fill-1.png" alt="">
+                    <a class="txt-informativo">Solo letras minúsculas y sin acentos</a>
+                </div>
+                <div class="contenedorBotones">
+                    <button class="btn-encriptar" onclick="funcionEncriptar();">Encriptar</button>
+                    <button class="btn-desEncriptar" onclick="desEncriptar();">Desencriptar</button>
+                </div>
+            </div>
+        </section>  
+        <section class="resultado-encrip">
+            <div class="contInput">
+                <input type="text" id="txtEncriptado">
+            </div>
+            <div class="cont-img">
+                <img id="img-desEncrp" src="img/Muñeco.png" alt="muñeco_lupa">
+            </div>
+            <div class="cont-txt-informativo">
+                <h3 id="mens_no_encontrado"></h3>
+                <p id="mensj_Texto"></p>
+            </div>
+            <div>
+                <button id="btn-copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body{
+    background-color: #f3f5fc;
+    height: 100vh;
+
+}
+
+nav{
+    margin-top: 40px;
+}
+
+.contenedor{
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#msgError{
+    font-size: 25px;
+    color: rgba(255, 0, 0, 0.372);
+}
+
+.encriptador{
+    height: 800px;
+}
+
+.encriptar{
+    width: 60%;
+}
+
+.cont-inferior{
+    margin-top: 90px;
+}
+
+.txt-informativo{
+    color: #626060;
+    font-size: 20px;
+
+}
+
+#texto_usuario{
+    color: #0a3871;
+    border: 0;
+    background-color: #f3f5fc;
+    font-size: 40px;
+    width: 100%;
+    height: 500px;
+    outline: none;
+}
+
+
+.txt-informativo{
+    display: inline-block;
+    font-size: x-large;
+    margin-right: 20%;
+}
+
+.contenedorBotones{
+    display: flex;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 20px 0;
+    width: 40%;
+    margin-left: 50px;
+}
+
+.btn-encriptar, .btn-desEncriptar{
+    margin-top: 15px;
+}
+
+#btn-copiar{
+    margin-top: 10px;
+    width: 80%;
+}
+
+.btn-encriptar{
+    background-color: #0a3871;
+}
+
+.btn-desEncriptar, #btn-copiar{
+    background-color: #d8dfe8;
+    color: #0a3871;
+    border: #0a3871;
+}
+.resultado-encrip{
+    width: 400px;
+    height: 700px;
+    border: 1px solid #1875E8;
+    background-color: #ffffff;
+    border-radius: 20px;
+    text-align: center;
+}
+#txtEncriptado{
+    width: 80%;
+    height: 300px;
+    outline: none;
+    border: 0;
+    color: #626060;
+    font-size: 40px;
+}
+
+.img-desEncrp{
+    margin: 0;
+    padding: 0;
+}
+img .img-desEncrp{
+    width: 100px;
+    object-fit: contain
+}
+
+#mens_no_encontrado{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#mensj_Texto{
+    color: #626060;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 700px){
+    body{
+        height: auto;
+    }
+
+    
+    .contenedor{
+        display: block;
+        width: auto;
+        margin: 0;
+        align-items: center;
+    }
+
+    .encriptar{
+        margin-left: 20px;
+    }
+
+    .cont-texto-usuario, .cont-txt-inf{
+        margin-left: 60px;
+    }
+
+    button{
+        margin-bottom: 20px;
+    }
+
+    .resultado-encrip{
+        margin: 0 20px 40px 60px;
+    }
+}
